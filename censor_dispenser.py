@@ -15,15 +15,15 @@ negative_words = ["concerned", "behind", "danger", "dangerous", "alarming", "ala
 
 
 def main():
-    # with open("email_one.txt", "r") as email:
-    #    email = email.read()
-    #    print(censor1(email))
-    # with open("email_two.txt", "r") as email:
-    #    email = email.read()
-    #    print(censor2(email, proprietary_terms))
-    # with open("email_three.txt", "r") as email:
-    #    email = email.read()
-    #    print(censor3(email, proprietary_terms, negative_words))
+    with open("email_one.txt", "r") as email:
+        email = email.read()
+        print(censor1(email))
+    with open("email_two.txt", "r") as email:
+        email = email.read()
+        print(censor2(email, proprietary_terms))
+    with open("email_three.txt", "r") as email:
+        email = email.read()
+        print(censor3(email, proprietary_terms, negative_words))
     with open("email_four.txt", "r") as email:
         email = email.read()
         print(censor4(email, proprietary_terms, negative_words))
